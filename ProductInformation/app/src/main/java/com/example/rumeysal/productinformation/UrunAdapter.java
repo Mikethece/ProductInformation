@@ -32,7 +32,7 @@ public class UrunAdapter extends ArrayAdapter<DateAndVacuum> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         if(convertView == null){
-            convertView = LayoutInflater.from(context).inflate(R.layout.urun_adi, parent);
+            convertView = LayoutInflater.from(context).inflate(R.layout.urun_adi, parent,false);
         }
 
         TextView tvBilgi = convertView.findViewById(R.id.UrunBilgi);
